@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="小尾羊,火锅,烧烤,内蒙古,羊肉,新加坡,外卖"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/icon.png">
+    <!-- css -->
+    <link href="css/bootstrap.css?t=1234" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/takeaway.css?t=1234" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css?t=1234" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/font-awesome.css?t=1234" rel="stylesheet" type="text/css" media="all">
+    <!--// css -->
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js?t=1234"></script>
+    <script type="text/javascript" src="js/bootstrap.js?t=1234"></script>
+    <script type="text/javascript" src="js/lang/lang-checkout.js?t=1234"></script>
+    <script type="text/javascript" src="js/switchLang.js?t=1234"></script>
+    <!-- //js -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js?t=1234"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--header -->
+<header id="topnav" class="defaultscroll scroll-active active">
+    <div class="navbar-phone tagline">
+        <button id="zh" class="globe" style="display:none;"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; 中文
+        </button>
+        <button id="en" class="globe"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; ENGLISH</button>
+        <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+65 6909 8707 / +65 6909 7707</div>
+    </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+			<div class="header-right-wrap pt-40  nav-bar-div" onclick="window.location = '/checkout.html'">
+			    <div class="cart-wrap">
+			        <button class="icon-cart-active">
+			        <span class="icon-cart">
+			            <i class="fa fa-cart-plus"></i>
+			            <span class="count-style" >0</span>
+			        </span>
+			        </button>
+			    </div>
+			</div>
+        </div>
+        <div class="nav-bar">
+            <a href="index.html" class="nav-brand logo">
+                <img src="images/logo-light.svg" alt="" class="logo-light">
+                <img src="images/logo-dark.svg" alt="" class="logo-dark">
+            </a>
+            <div id="navigation" class="active">
+                <ul class="nav navbar-nav navbar-right navigation-menu">
+                    <li><a id="indexId" href="index.html"></a></li>
+                    <li><a id="takeawayId" class="active" href="takeaway.html"></a></li>
+                    <li><a id="activityId" href="activity.html"></a></li>
+                    <li><a id="recruitmentId" href="recruitment.html"></a></li>
+                    <li><a id="contactUsId" href="contactUs.html"></a></li>
+					<li>
+								<div class="header-right-wrap pt-40" onclick="window.location = '/checkout.html'">
+									<div class="cart-wrap">
+										<button class="icon-cart-active">
+											<span class="icon-cart">
+												<i class="fa fa-cart-plus"></i>
+												<span class="count-style" >0</span>
+											</span>
+										</button>
+									</div>
+								</div>
+							</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--//header -->
+<!-- content -->
+<section class="bg-half">
+    <div class="bg-overlay"></div>
+</section>
+<div class="wrapper">
+    <div class="cart-main-area pt-95 pb-100">
+        <div class="container">
+           <div class="blk plc">
+               <div class="p12-curmbs-1 position"><b id="linkId">  </b>
+           	 <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;<span id="indexsId"></span></a>
+           	 &gt;
+                 <span id="checkoutId"></span></div>
+
+           </div>
+           <div class="clear"></div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <form action="#">
+                        <div class="table-content table-responsive cart-table-content">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th id="form1Id"></th>
+                                    <th id="form2Id"></th>
+                                    <th id="form3Id"></th>
+                                    <th id="form4Id"></th>
+                                    <th id="form5Id"></th>
+                                    <th id="form6Id"></th>
+                                </tr>
+                                </thead>
+                                <tbody id="cart_list">
+                                <!--<tr>
+                                    <td class="product-thumbnail">
+                                        <a href="#"><img src="images/works/41.jpg" alt=""></a>
+                                    </td>
+                                    <td class="product-name"><a href="#">Product Name</a></td>
+                                    <td class="product-price-cart"><span class="amount">$260.00</span></td>
+                                    <td class="product-quantity">
+                                        <div class="cart-plus-minus">
+                                            <div class="dec qtybutton">-</div>
+                                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                                            <div class="inc qtybutton">+</div>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal">$110.00</td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>-->
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cart-shiping-update-wrapper">
+                                    <div class="cart-shiping-update">
+                                        <a href="#" id="cartId" onclick="window.location='/takeaway.html'"></a>
+                                    </div>
+                                    <div class="cart-clear">
+                                        <a href="#" id="cart0Id" onclick="delAllCart()"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="grand-totall">
+                                <div class="title-wrap">
+                                    <h4 class="cart-bottom-title section-bg-gary-cart" id="cart1Id"></h4>
+                                </div>
+                                <h5><span id="cart2Id"></span><span class="money rightOn">$00.00</span></h5>
+                                <div class="total-shipping">
+                                    <h5 id="cart3Id"></h5>
+                                    <ul>
+                                        <li><span id="cart4Id"></span> <span id="tax" class="rightOn">$00.00</span></li>
+                                        <li><span id="cart5Id"></span> <span id="ship" class="rightOn">$00.00</span></li>
+                                    </ul>
+                                </div>
+                                <h4 class="grand-totall-title"><span id="cart6Id" ></span> <span class="total rightOn" >$00.00</span></h4>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="cart-tax">
+                                <div class="title-wrap">
+                                    <h4 class="cart-bottom-title section-bg-gray"> <span id="cart7Id">></h4>
+                                </div>
+                                <div class="tax-wrapper">
+                                    <div class="tax-select-wrapper">
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart8Id"></span><abbr class="required" title="required">*</abbr>
+                                            </label>
+                                            <input type="text" name="name">
+                                        </div>
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart9Id"></span><abbr class="required" title="required" >*</abbr>
+                                            </label>
+                                            <input type="text" name="phone">
+                                        </div>
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart10Id"></span><abbr class="required" title="required">*</abbr>
+                                            </label>
+                                            <input type="text" name="address">
+                                        </div>
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart11Id"></span><abbr class="required" title="required">*</abbr>
+                                            </label>
+                                            <input type="text" name="people">
+                                        </div>
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart12Id"></span><abbr class="required" title="required">*</abbr>
+                                            </label>
+                                            <select class="email s-email s-wid" name="time">
+                                                <option value="30" id="cart13Id"></option>
+                                                <option value="45" id="cart14Id"></option>
+                                                <option value="60" id="cart15Id"></option>
+                                                <option value="75" id="cart16Id"></option>
+                                                <option value="90" id="cart17Id"></option>
+                                                <option value="0" id="cart18Id"></option>
+                                            </select>
+                                        </div>
+                                        <div class="tax-select">
+                                            <label>
+                                                <span id="cart19Id"></span>
+                                            </label>
+                                            <input type="text" name="remark">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discount-code-wrapper">
+                                <div class="title-wrap">
+                                    <h4 class="cart-bottom-title section-bg-gray"  id="cart20Id"></h4>
+                                </div>
+                                <div class="pay-top sin-payment">
+                                    <div class="tax-wrapper">
+                                        <form action="#" method="post">
+                                            <div class="form-input">
+                                               <!-- <div class="tax-select">
+                                                    <input id="payment-method-1" class="input-radio" type="radio"
+                                                           value="cheque" name="payment_method">
+                                                    <label for="payment-method-1">Paynow</label> <img
+                                                        src="images/paynow.png" alt="">
+                                                </div>
+                                                <div class="tax-select">
+                                                    <input id="payment-method-2" class="input-radio" type="radio"
+                                                           value="cheque" name="payment_method">
+                                                    <label for="payment-method-2">Paypal</label> <img
+                                                        src="images/paypal.png" alt="">
+                                                </div>
+                                                <div class="tax-select">
+                                                    <input id="payment-method-3" class="input-radio" type="radio"
+                                                           value="cheque" name="payment_method">
+                                                    <label for="payment-method-3">微信</label> <img
+                                                        src="images/wechat.png" alt="">
+                                                </div>
+                                                <div class="tax-select">
+                                                    <input id="payment-method-4" class="input-radio" type="radio"
+                                                           value="cheque" name="payment_method">
+                                                    <label for="payment-method-4">支付宝</label> <img
+                                                        src="images/alipay.png" alt="">
+                                                </div>-->
+												<div class="tax-select">
+												     <input id="payment-method-1" class="input-radio" type="radio"
+												            value="paynow" name="payment_method">
+												     <label for="payment-method-1">Paynow</label>
+													 <span>UEN:201835063W333</span>
+													 <img src="images/paynow.png" alt="">
+												 </div>
+                                                <div class="tax-select">
+                                                    <input id="payment-method-5" class="input-radio" type="radio"
+                                                           value="cash_on_delivery" name="payment_method" checked>
+                                                    <label for="payment-method-5"  id="cart21Id"></label>
+
+                                                </div>
+
+                                            </div>
+                                            <button class="cart-btn-2" type="button" onclick="addOrder()"  id="cart22Id"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- //content -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+				<p>Copyright &copy; 2020. <span class="redText">Little Lamb</span> All rights reserved.<span class="facebook"><a href="https://www.facebook.com/littlelambsg/?__tn__=%2Cd%2CP-R&eid=ARA1OA3o3tjLAsQ9VY5cGtFyezl9XcvOLLUtw1kUlk1c207lyAiZ1kqhcjkNMF7hnZdbCMrMPsXrmxKD" target="_blank"><i class="fa fa-facebook"></i></a></span></p>
+		</div>
+	</div>
+<!-- //footer -->
+
+<!-- js -->
+<script src="js/jarallax.js?t=1234"></script>
+<script src="js/SmoothScroll.min.js?t=1234"></script>
+<script type="text/javascript" src="js/plugins.js?t=1234"></script>
+<script type="text/javascript" src="js/move-top.js?t=1234"></script>
+<script type="text/javascript" src="js/easing.js?t=1234"></script>
+<script type="text/javascript" src="js/app/cart.js?t=1234"></script>
+<script type="text/javascript" src="js/app/api.js?t=1234"></script>
+
+<!-- //js -->
+<script type="text/javascript">
+    /* init Jarallax */
+    $('.jarallax').jarallax({
+        speed: 0.5,
+        imgWidth: 1366,
+        imgHeight: 768
+    })
+</script>
+<script type="text/javascript">
+
+    getCartInfo()
+
+
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+</body>
+</html>
