@@ -9,7 +9,7 @@ var zh = [
  ,'小尾羊荣获中国驰名商标','小尾羊获中国十大火锅品牌','小尾羊获2011年度餐饮百强企业第三名','小尾羊获2014年度中国火锅领军品牌',
 ]; 
 var en = [
- 'INDEX','TAKE_OUT','EVENT','RECRUITMENT','CONTACT US','Takeaway offers','First 10 orders of the day enjoy island wide FREE delivery! ','Free meal delivery for spending over $ 100','Order Now'
+ 'INDEX','TAKE AWAY','EVENT','RECRUITMENT','CONTACT US','Takeaway offers','First 10 orders of the day enjoy island wide FREE delivery! ','Free meal delivery for spending over $ 100','Order Now'
  ,'Won the highest award in China catering industry, the 4th China Food Festival Golden Tripod Award.',
  'Ranked No.4 in the top 50 private enterprises in Inner Mongolia in 2004.',
  'Inner Mongolia Autonomous Region People’s Government awarded the region’s top 10 non-public owned economy employment contribution enterprises award.'

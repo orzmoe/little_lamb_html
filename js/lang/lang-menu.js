@@ -4,5 +4,5 @@ const ids = [
 var zh = [
  '首页','外卖','活动','招聘','联系我们',]; 
 var en = [
- 'INDEX','TAKEAWAY','ACTIVITY','RECRUITMENT','CONTACT US',]; 
+ 'INDEX','TAKE AWAY','ACTIVITY','RECRUITMENT','CONTACT US',]; 
  

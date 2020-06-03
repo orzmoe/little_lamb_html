@@ -14,7 +14,7 @@ var zh = [
  '洗碗工','暂不缺人','待遇面议','工作地点','申请资格仅限新加坡公民，永久居民、家属证和长期居留证持有者',
  ]; 
 var en = [
- 'INDEX','TAKE_OUT','EVENT','RECRUITMENT','CONTACT US','Position:', 'Index','Recruitment',
+ 'INDEX','TAKE AWAY','EVENT','RECRUITMENT','CONTACT US','Position:', 'Index','Recruitment',
  'Waiter','Temporarily No Recruitment','Negotiable Treatment','Work Location','Eligibility for application is limited to Singapore Citizen, Permanent Residents, Dependant Pass and Long-Term Visit Pass holders.',
  'Kitchen Assistant','Temporarily No Recruitment','Negotiable Treatment','Work Location','Eligibility for application is limited to Singapore Citizen, Permanent Residents, Dependant Pass and Long-Term Visit Pass holders.',
  'Chef','Temporarily No Recruitment','Negotiable Treatment','Work Location','Eligibility for application is limited to Singapore Citizen, Permanent Residents, Dependant Pass and Long-Term Visit Pass holders.',

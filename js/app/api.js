@@ -102,7 +102,7 @@ function getCartInfo() {
     console.log(cartInfo)
     $.ajax({
         type: "post",
-        url: url + '/api/user/getCartInfo',
+        url: url + 'api/user/getCartInfo',
         async: false, // 使用同步方式
         // 1 需要使用JSON.stringify 否则格式为 a=2&b=3&now=14...
         // 2 需要强制类型转换，否则格式为 {"a":"2","b":"3"}
@@ -193,7 +193,7 @@ function addOrder() {
     }
     $.ajax({
         type: "post",
-        url: url + '/api/user/addOrder',
+        url: url + 'api/user/addOrder',
         async: false,
         data: obj,
         contentType: "application/json; charset=utf-8",

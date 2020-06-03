@@ -4,6 +4,7 @@
 
 .gallery-item-wrapper {
     padding-bottom: 25px;
+    position: relative;
 }
 .gallery-item {
     overflow: hidden;
@@ -30,25 +31,32 @@
 
 .atbd_add{
     position: absolute;
-    right: 10px;
-    top: 166px;
+    right: 0px;
+    bottom: 70px;
     font-size: 2rem;
 	text-align: center; 
-	width: 2rem;
-	height: 2rem; 
-	line-height:1.8rem;  
+	width: 1.5rem;
+	height: 1.5rem; 
+	line-height:0.9rem;  
 	font-weight: 600; 
 	cursor:pointer;
 }
-
+.atbd_add:hover{
+	border-radius: 100%;
+	background-color:#c62922 ; 
+}
+.atbd_add:hover a{ 
+	color: #FFF; 
+	font-size: 1.4rem;  
+	}
  @media only screen and (max-width: 767px) {
 	 .atbd_add{
-	    top: 350px !important;
 	    right: 20px;
 	    font-size: 2.2rem;
 	 }
 	 .editContent h5{
 		 font-size: 18px !important;
+		 width: 90% !important;
 	 }
 	 }
 .atbd_add a{
@@ -95,28 +103,25 @@
  * -------------------------- */
 .filter {
     list-style: none;
-    padding: 0;
-    margin: 0 0 60px 0;
+    padding: 0; 
     text-align: center;
 }
 .filter li {
-    display: inline-block;
-    margin: 0;
+    display: block;
+    margin: 14px 0;
 }
 .filter li:before {
-    display: inline-block;
-    content: "/";
+    display: block;
+    content: "*";
     padding: 0 25px 0 19px;
-    color: rgba(0,0,0,0.20);
-}
-.filter li:first-child:before {
-    display: none;
-}
+    color: rgba(0,0,0,1);
+} 
 .filter li a {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #2c3e50;
+	display: block;
 }
 .filter li a:hover,
 .filter li a:focus,
@@ -165,31 +170,71 @@
     transition-duration: 0s;
 }
 
-
-
-
-
-/*	Gallery 1 MEDIA QUERIES
-/*----------------------------------------------------*/
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-	
-		
-	
+ 
+@media (max-width: 768px) {
+	.editContents{
+		    width: 25%;
+	        display: inline-block;
+	        max-height: calc(100vh - 100px);
+	        overflow-y: scroll;
+	        overflow-x: hidden;
+	}
+	#test{
+		    width: 74%;
+		    float: right;
+	}
+	.filter li {
+		margin: 5px 0 !important;
+	}	
+	.filter li a{
+		font-size: 0.8rem;
+	}
+	.container{
+		padding:0 5px!important;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 	
-
-	
+ .editContents{
+ 	    width: 12%;
+         display: inline-block;
+         max-height: calc(100vh - 100px);
+         overflow-y: scroll;
+         overflow-x: hidden;
+ }
+ #test{
+ 	    width: 86%;
+ 	    float: right;
+ }
+ .filter li {
+ 	margin: 20px 0 !important;
+ }
+	.col-xs-12{
+		padding-left: 8px !important;
+		padding-right: 0 !important;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	
-	
+	.editContents{
+		    width: 10%;
+	        display: inline-block;
+	        max-height: calc(100vh - 100px);
+	        overflow-y: scroll;
+	        overflow-x: hidden;
+	}
+	#test{
+		    width: 88%;
+		    float: right;
+	}
+	.col-xs-12{
+		padding-left: 10px !important;
+		padding-right: 0 !important;
+	}
 	
 }
 

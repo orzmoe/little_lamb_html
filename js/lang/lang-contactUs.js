@@ -8,7 +8,7 @@ var zh = [
  '新达城店','联合广场店','办公地址','办公邮箱','办公电话',
  ]; 
 var en = [
- 'INDEX','TAKE_OUT','EVENT','RECRUITMENT','CONTACT US','Your Location:','Index','Contact Us', 
+ 'INDEX','TAKE AWAY','EVENT','RECRUITMENT','CONTACT US','Your Location:','Index','Contact Us', 
  'Suntec City','United Square Mall','Office Address','Office Email','Office Telephone',
  ]; 
  
